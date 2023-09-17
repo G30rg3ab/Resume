@@ -1,59 +1,116 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>My Resume</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    <h1>George Boutselis' Resume</h1>
-    <p>I am a Mathematics and Statistics student seeking a seasonal internship or job in the field of Mathematics, Finance, and Informatics where I can put my knowledge and drive to the test and learn as much as possible in doing so.</p>
-    <hr/>
+    <!--Introduction-->
+    <section>
+        <h1>George Boutselis</h1>
+        <p>I am a Mathematics and Statistics student seeking a seasonal internship or job in the field of Mathematics,
+            Finance, and Informatics where I can put my knowledge and drive to the test and learn as much as possible in
+            doing so.</p>
+    </section>
+    <hr>
 
-    <h2>Skills</h2>
-    <ul>
-        <li>Programming in Python, R, Haskell, Swift, MQL5 and HTML.</li>
-        <li>English (Native), Afrikaans and French Intermediate.</li>
-        <li>Viola, Piano.</li>
-        <li>Software Development.</li>
-        <li>Website Development.</li>
-    </ul>
-    <hr/>
+    <!--Skills-->
+    <section>
+        <div class="container">
+            <h2>Skills</h2>
+            <div>
+                <ul>
+                    <li>Programming in Python, R, Haskell, Swift, MQL4, MQL5, CSS, HTML, Java.</li>
+                    <li>English (native), Afrikaans, French and Greek (intermediate).</li>
+                    <li>Viola & Piano.</li>
+                    <li>Vectorised and iterative backtesting of trading strategies.</li>
+                    <li>Automatation of trading strategies.</li>
+                </ul>
+            </div>
+        </div>
 
-    <h2>Education</h2>
-    <h3>Tertiary Education</h3>
-    <ul>
-        <li>Mathematics and Statistics (BSc Hons)<br/> University of Edinburgh | 2021 - 2025</li>
-        <li>Actuarial Science (BSc) <br/> University of Witwaterstrand | Feb - Sep 2021</li>
-    </ul>
-    <h3>Secondary Education</h3>
-    <ul>
-        <li>St John's College (Johannesburg) | 2016 - 2020</li>
-    </ul>
-    <hr/>
-    
-    <h2>Experience</h2>
-    <h3>Algorithmic Trading</h3>
-    <p>I create complex trading algorithms using Python using technical analysis (Including basic Neural Networks). I Sell automated trading robots on MQL5 market place.</p>
-    <h3>Tutoring</h3>
-    <p>Tutor high school Mathematics and Physics. Tutor 1st year university Mathematics.</p>
-    <h3>Print Operator</h3>
-    <p>Wrapit Packaging 2019-2023 (holidays). <br />Operate vinyl cutting machine and ribbon printer as well as the software. Edit images using Python.</p>
-    <hr/>
+    </section>
+    <hr>
 
-    <h2>Interest Opportunities</h2>
-    <h3>IOS App Development</h3>
-    <p>I developed simple apps using swift.</p>
-    <h3>Ready Trader Go</h3>
-    <p>I participated in the Ready Trader Go automated trading competition by Optiver.</p>
-    <h3>Music</h3>
-    <p>I completed my Grade 8 ABRSM Exam for Viola, and grade 5 Piano.</p>
-    <hr />
+    <!--Education-->
+    <section>
+        <div class="container">
+            <div>
+                <h2>Education</h2>
+            </div>
+            <div>
+                <div id="tertiary">
+                    <h3>Tertiary Education</h3>
+                    <ul>
+                        <li>Mathematics and Statistics (BSc Hons)<br>University of Edinburgh | 2021 - 2025</li>
+                        <li id = "acsi">Acturial Science (BSc) <br>University of Witwatersrand | Feb - Sep 2021</li>
+                    </ul>
+                </div>
+                <div id="secondary" class = "not-first">
+                    <h3>Secondary</h3>
+                    <ul>
+                        <li>St John's College (Johannesburg) | 2016 - 2020</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
 
-    <h3><a href="./contact.html">Contact</a></h3>
-    <p>boutselisgeorgea@gmail.com <br /> +27 83 228 4824</p>
-    <footer>
-        <p>George Angelo Boutselis</p>
-    </footer>
+    <!--Experience-->
+    <section>
+        <div class = "container" >
+            <div><h2>Experience</h2></div>
+
+        <div>
+            <div id = "algotrading">
+                <h3>Quantitative Trading</h3>
+                <p>I create complex trading algorithms using Python and MQL5 (which is a subset of C++)  which I both use and sell on the market.</p>
+            </div>
+
+            <div id = "tutoring"class = "not-first">
+                <h3>Tutoring</h3>
+                <ul>
+                    <li>Private Maths Tutor | 2022 - 2023<br>I privately tutor high school children in mathametics.</li>
+                    <li id = "mm"> Master Maths Johannesburg |  June - Auguest 2023 <br>I tutored maths to students in classroom.</li>
+                </ul>
+            </div>
+            
+            <div id = "print" class = "not-first">
+                <h3>Other</h3>
+                <p>Wrapit Packaging Johannesburg | 2021 - 2023 <br> Operate vinyl cutting machine and ribbon printer as well as the software, editing the images using Python.</p>
+            </div>
+        </div>
+    </section>
+    <hr>
+
+    <!--Acheivements-->
+    <div class = "container">
+        <div><h2>Acheivements</h2></div>
+        <div>
+            <ul>
+                <li>Over 2600 downloads and 20 paid purchaces of <a href = "https://www.mql5.com/en/users/georgeboutselis/seller">my trading algorithims</a> with only positive reviews.</li>
+                <li>ABRSM Grade 8 Viola by age 17.</li>
+                <li>Created a working optimiser and backtester for trading strategies using python.</li>
+            </ul>
+        </div>
+    </div>
+    <hr>
+
+    <!--Contact-->
+    <div class = "container">
+        <div><h3>Contact</h3></div>
+        <ul>
+            <li>boutselisgeorgea@gmail.com</li>
+            <li>+27 83 228 4824</li>
+        </ul>
+    </div>
+
+
+
 </body>
 
 </html>
